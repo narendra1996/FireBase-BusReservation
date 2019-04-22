@@ -16,7 +16,7 @@ export class HomePageService {
   getUsers() {
     // this.usersList = this.fireStore.list('/Users');
     // return  this.usersList.snapshotChanges();
-    return this.fireStore.collection('Users').valueChanges();
+    return this.fireStore.collection('Users', ref => ref.where('Email', '==', 'narendrareddy1996@gmail.com')).valueChanges();
   }
 }
 
