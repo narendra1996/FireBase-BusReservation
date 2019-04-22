@@ -1,0 +1,35 @@
+<!-- <p>
+  home-page works!
+</p> -->
+<table class="table table-sm">
+  <thead>
+    <th>
+      Email
+    </th>
+    <th>
+      FirstName
+    </th>
+    <th>
+      LastName
+    </th>
+    <th>
+      Password
+    </th>
+  </thead>
+  <ng-container *ngFor = "let user of usersList">
+    <tr class = "table-dark">
+      <td>
+        {{user.Email}}
+      </td>
+      <td>
+        {{user.FirstName}}
+      </td>
+      <td>
+          {{user.LastName}}
+        </td>
+      <td>
+        {{user.Password}}
+      </td>
+    </tr>
+  </ng-container>
+</table>
